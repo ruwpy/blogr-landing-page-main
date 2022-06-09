@@ -23,13 +23,13 @@
     margin-top: rem(20);
     height: rem(320);
     width: rem(320);
-    background-image: url(/images/illustration-editor-mobile.svg);
+    background-image: url(../images/illustration-editor-mobile.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     
     @include breakpoint-up('large') {
-      background-image: url(/images/illustration-editor-desktop.svg);
+      background-image: url(../images/illustration-editor-desktop.svg);
       height: 100%;
       width: 100%;
       transform: scale(1.6) translateX(rem(150));
@@ -142,13 +142,13 @@
     margin-top: rem(20);
     height: rem(320);
     width: rem(320);
-    background-image: url(/images/illustration-laptop-mobile.svg);
+    background-image: url(../images/illustration-laptop-mobile.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     
     @include breakpoint-up('large') {
-      background-image: url(/images/illustration-laptop-desktop.svg);
+      background-image: url(../images/illustration-laptop-desktop.svg);
       height: 100%;
       width: 100%;
       transform: scale(1.6) translateX(rem(-170));
