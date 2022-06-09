@@ -1,0 +1,28 @@
+@use '../util/' as *;
+
+h1, h2, h3 {
+  margin-top: 0;
+  font-family: var(--font-headings);
+  font-weight: 600;
+}
+
+h1 {
+  color: white;
+}
+
+h2 {
+  color: var(--headings-color);
+  font-size: rem(28);
+  
+  @include breakpoint-up('medium') {
+    font-size: rem(38);
+  }
+}
+
+h3 {
+  font-size: rem(28);
+}
+
+p {
+  font-weight: 400;
+}

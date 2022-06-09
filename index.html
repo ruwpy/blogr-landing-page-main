@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="dist/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;500;600&family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Blogr</title>
+  </head>
+  <body>
+    <!-- Header Section -->
+
+    <header class="header">
+      <nav class="nav container">
+        <a class="header__logo" href="/index.html"
+          ><img src="images/logo.svg" alt=""
+        /></a>
+
+        <div class="header__burger-menu">
+          <a class="header__toggle hide-for-pc">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+          <ul class="header__links list hide-for-mobile">
+            <li class="nav-list">
+              <a class="nav-item" href="#">
+                Product<img
+                  class="chevron"
+                  src="images/icon-arrow-light.svg"
+                  alt=""
+                />
+              </a>
+              <ul class="nav-list__sublist">
+                <li class="nav-list__subitem"><a href="#">Overview</a></li>
+                <li class="nav-list__subitem"><a href="#">Pricing</a></li>
+                <li class="nav-list__subitem"><a href="#">Marketplace</a></li>
+                <li class="nav-list__subitem"><a href="#">Features</a></li>
+                <li class="nav-list__subitem"><a href="#">Integrations</a></li>
+              </ul>
+            </li>
+            <li class="nav-list">
+              <a class="nav-item" href="#">
+                Company<img
+                  class="chevron"
+                  src="images/icon-arrow-light.svg"
+                  alt=""
+                />
+              </a>
+              <ul class="nav-list__sublist">
+                <li class="nav-list__subitem"><a href="#">About</a></li>
+                <li class="nav-list__subitem"><a href="#">Team</a></li>
+                <li class="nav-list__subitem"><a href="#">Blog</a></li>
+                <li class="nav-list__subitem"><a href="#">Careers</a></li>
+              </ul>
+            </li>
+            <li class="nav-list">
+              <a class="nav-item" href="#">
+                Connect<img
+                  class="chevron"
+                  src="images/icon-arrow-light.svg"
+                  alt=""
+                />
+              </a>
+              <ul class="nav-list__sublist">
+                <li class="nav-list__subitem"><a href="#">Contact</a></li>
+                <li class="nav-list__subitem"><a href="#">Newsletter</a></li>
+                <li class="nav-list__subitem"><a href="#">Linkedin</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <div class="header__buttons hide-for-mobile">
+            <button class="btn btn--login" type="button">Login</button>
+            <button class="btn btn--primary" type="button">Sign Up</button>
+          </div>
+        </div>
+      </nav>
+      <div class="header__menu hide-for-pc collapsed">
+        <ul class="list">
+          <li class="nav-menu" data-dropdown>
+            <a href="#"
+              >Product<img
+                data-dropdown-button
+                class="chevron"
+                src="images/icon-arrow-dark.svg"
+                alt=""
+              />
+            </a>
+            <ul class="nav-menu__sublist">
+              <li class="nav-menu__subitem"><a href="#">Overview</a></li>
+              <li class="nav-menu__subitem"><a href="#">Pricing</a></li>
+              <li class="nav-menu__subitem"><a href="#">Marketplace</a></li>
+              <li class="nav-menu__subitem"><a href="#">Features</a></li>
+              <li class="nav-menu__subitem"><a href="#">Integrations</a></li>
+            </ul>
+          </li>
+          <li class="nav-menu" data-dropdown>
+            <a href="#"
+              >Company<img
+                data-dropdown-button
+                class="chevron"
+                src="images/icon-arrow-dark.svg"
+                alt=""
+              />
+            </a>
+            <ul class="nav-menu__sublist">
+              <li class="nav-menu__subitem"><a href="#">About</a></li>
+              <li class="nav-menu__subitem"><a href="#">Team</a></li>
+              <li class="nav-menu__subitem"><a href="#">Blog</a></li>
+              <li class="nav-menu__subitem"><a href="#">Careers</a></li>
+            </ul>
+          </li>
+          <li class="nav-menu" data-dropdown>
+            <a href="#"
+              >Connect<img
+                data-dropdown-button
+                class="chevron"
+                src="images/icon-arrow-dark.svg"
+                alt=""
+              />
+            </a>
+            <ul class="nav-menu__sublist">
+              <li class="nav-menu__subitem">
+                <a href="#">Contact</a>
+              </li>
+              <li class="nav-menu__subitem">
+                <a href="#">Newsletter</a>
+              </li>
+              <li class="nav-menu__subitem">
+                <a href="#">Linkedin</a>
+              </li>
+            </ul>
+          </li>
+          <div class="header__line line"></div>
+          <button class="header__btn btn btn--login">Login</button>
+          <button class="header__btn btn btn--menu">Sign Up</button>
+        </ul>
+      </div>
+      <div class="header__content">
+        <h1 class="header__title">A modern publishing platform</h1>
+        <p class="header__text">
+          Grow your audience and build your online brand
+        </p>
+        <button class="btn btn--primary">Start for Free</button>
+        <button class="btn btn--secondary">Learn More</button>
+      </div>
+    </header>
+
+    <!-- Main -->
+
+    <main class="main">
+      <!-- First Section -->
+
+      <section class="editor container">
+        <h2 class="editor__heading">Designed for the future</h2>
+        <div class="grid grid--cols-2">
+          <div class="editor__image"></div>
+          <div class="content">
+            <h3 class="content__heading">Introducing an extensible editor</h3>
+            <p class="content__text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem
+              atque nesciunt, veniam vel impedit inventore fugit! Ad ratione
+              quos dicta labore architecto vel voluptatibus beatae maiores amet
+              sint ipsam, in optio dolorum tenetur voluptates laborum illum
+              maxime corporis, sed nulla tempore ullam culpa. Explicabo
+              repellendus quisquam dolorem necessitatibus voluptates omnis?
+            </p>
+            <h3 class="content__heading">Robust content management</h3>
+            <p class="content__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+              adipisci commodi, iusto voluptates, officiis veniam odio
+              consequatur amet porro non perferendis repudiandae consectetur?
+              Repudiandae quidem et delectus sed, perspiciatis ullam molestiae
+              quisquam.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Second Section -->
+
+      <section class="phones">
+        <div class="phones__content container">
+          <div class="grid grid--cols-2">
+            <div>
+              <img
+                class="phones__image"
+                src="/images/illustration-phones.svg"
+                alt=""
+              />
+            </div>
+            <div class="desc">
+              <h2 class="desc__heading">State of the Art Infrastructure</h2>
+              <p class="desc__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reprehenderit, repudiandae consequuntur facere saepe hic alias
+                sequi nulla error quia labore. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Sit, quisquam vero natus iusto.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Third Section -->
+
+      <section class="laptop container">
+        <div class="grid grid--cols-2">
+          <div class="laptop__image"></div>
+          <div class="content">
+            <h3 class="content__heading">Free, open, simple</h3>
+            <p class="content__text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem
+              atque nesciunt, veniam vel impedit inventore fugit! Ad ratione
+              quos dicta labore architecto vel voluptatibus beatae maiores amet
+              sint ipsam, in optio dolorum tenetur voluptates laborum illum
+              maxime corporis, sed nulla tempore ullam culpa. Explicabo
+              repellendus quisquam dolorem necessitatibus voluptates omnis?
+            </p>
+            <h3 class="content__heading">Powerful tooling</h3>
+            <p class="content__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+              adipisci commodi, iusto voluptates, officiis veniam odio
+              consequatur amet porro non perferendis repudiandae consectetur?
+              Repudiandae quidem et delectus sed, perspiciatis ullam molestiae
+              quisquam.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+
+    <footer class="footer">
+      <div class="footer__content container">
+        <img class="footer__logo" src="/images/logo.svg" alt="" />
+        <div class="footer__section">
+          <h4 class="footer__heading">Product</h4>
+          <div>
+            <ul class="footer__list">
+              <li class="footer__item"><a href="#">Overview</a></li>
+              <li class="footer__item"><a href="#">Pricing</a></li>
+              <li class="footer__item"><a href="#">Marketplace</a></li>
+              <li class="footer__item"><a href="#">Features</a></li>
+              <li class="footer__item"><a href="#">Integrations</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__heading">Company</h4>
+          <div>
+            <ul class="footer__list">
+              <li class="footer__item"><a href="#">About</a></li>
+              <li class="footer__item"><a href="#">Team</a></li>
+              <li class="footer__item"><a href="#">Blog</a></li>
+              <li class="footer__item"><a href="#">Careers</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__heading">Connect</h4>
+          <div>
+            <ul class="footer__list">
+              <li class="footer__item"><a href="#">Contact</a></li>
+              <li class="footer__item"><a href="#">Newsletter</a></li>
+              <li class="footer__item"><a href="#">Linkedin</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="app/js/script.js" defer></script>
+  </body>
+</html>

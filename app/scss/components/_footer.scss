@@ -1,0 +1,59 @@
+@use '../util/' as *;
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint-up('medium') {
+    flex-direction: row;
+    gap: rem(200);
+  }
+}
+
+.footer {
+  padding-top: rem(70);
+  padding-bottom: rem(45);
+  text-align: center;
+  background: var(--footer-background-color);
+  border-top-right-radius: rem(100);
+
+  @include breakpoint-up('medium') {
+    text-align: left;   
+  }
+
+  &__logo {
+    margin-inline: auto;
+    margin-bottom: rem(40);
+    width: rem(100);
+    height: rem(40);
+
+    @include breakpoint-up('medium') {
+      margin: 0
+    }
+  }
+  
+  &__heading {
+    font-weight: 500;
+  }
+  
+  &__list {
+    color: var(--footer-text-color);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-bottom: rem(40);
+  }
+
+  &__item {
+    text-decoration: none;
+    transition: text-decoration 300ms;
+    
+    &:not(:last-child) {
+      margin-bottom: rem(14);
+    }
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

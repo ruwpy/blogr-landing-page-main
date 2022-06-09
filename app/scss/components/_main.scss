@@ -1,0 +1,157 @@
+@use '../util/' as *;
+
+.main {
+  overflow: hidden;
+}
+
+.editor {
+  margin-top: rem(100);
+  position: relative;
+
+  @include breakpoint-up('medium') {
+    margin-top: rem(160);
+  }
+
+  &__heading {
+    text-align: center;
+  }
+
+  &__image {
+    position: relative;
+    display: block;
+    margin-inline: auto;
+    margin-top: rem(20);
+    height: rem(320);
+    width: rem(320);
+    background-image: url(/images/illustration-editor-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+    @include breakpoint-up('large') {
+      background-image: url(/images/illustration-editor-desktop.svg);
+      height: 100%;
+      width: 100%;
+      transform: scale(1.6) translateX(rem(150));
+      order: 2;
+    }
+  }
+}
+
+.content.order2 {
+  @include breakpoint-up('medium') {
+    order: 2;
+  }
+}
+
+.content {
+  margin-top: rem(60);
+  text-align: center;
+  
+  @include breakpoint-up('medium') {
+    order: 1;
+    text-align: left;
+  }
+
+  &__heading {
+    color: var(--headings-color);
+    margin-bottom: rem(15);
+  }
+
+  &__text {
+    color: var(--body-copy-color);
+    line-height: 190%;
+    margin-bottom: rem(35);
+
+    @include breakpoint-up('medium') {
+      margin-bottom: rem(70);
+    }
+  }
+}
+
+.phones {
+  margin-top: rem(200);
+  background-image: var(--body-gradient);
+  overflow: visible;
+  padding-top: rem(230);
+  padding-bottom: rem(45);
+  border-top-right-radius: rem(100);
+  border-bottom-left-radius: rem(100);
+
+  @include breakpoint-up('large') {
+    background-size: 100%;
+    background-position: -500% 0%;
+    padding-top: rem(90);
+    padding-bottom: rem(70);
+  }
+
+  &__image {
+    position: absolute;
+    width: rem(375);
+    left: 50%;
+    transform: translateX(-50%) translateY(rem(-400));
+
+    
+    @include breakpoint-up('large') {
+      width: rem(500);
+      left: 0%;
+      transform: translateX(rem(10)) translateY(rem(-150));
+    }
+    
+    @include breakpoint-up('xlarge') {
+      transform: translateX(rem(170)) translateY(rem(-150));
+    }
+  }
+}
+
+.desc {
+  text-align: center;
+
+  @include breakpoint-up('large') {
+    order: 1;
+    text-align: left;
+  }
+
+  &__heading {
+    color: white;
+    margin-bottom: rem(15);
+    font-size: rem(38);
+  }
+
+  &__text {
+    font-family: var(--font-headings);
+    font-weight: 300;
+    color: white;
+    line-height: 190%;
+  }
+}
+
+.laptop {
+  margin-top: rem(50);
+  margin-bottom: rem(320);
+  position: relative;
+
+  @include breakpoint-up('medium') {
+    margin-top: rem(240);
+  }
+
+  &__image {
+    position: relative;
+    display: block;
+    margin-inline: auto;
+    margin-top: rem(20);
+    height: rem(320);
+    width: rem(320);
+    background-image: url(/images/illustration-laptop-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+    @include breakpoint-up('large') {
+      background-image: url(/images/illustration-laptop-desktop.svg);
+      height: 100%;
+      width: 100%;
+      transform: scale(1.6) translateX(rem(-170));
+    }
+  }
+}
