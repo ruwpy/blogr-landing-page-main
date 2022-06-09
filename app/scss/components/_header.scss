@@ -2,12 +2,12 @@
 
 .header {
   height: rem(600);
-  background-image: url(/images/bg-pattern-intro-mobile.svg), var(--intro-gradient); 
+  background-image: url(images/bg-pattern-intro-mobile.svg), var(--intro-gradient); 
   background-position: 37% 33%;
   border-bottom-left-radius: rem(120);
 
   @include breakpoint-up('medium') {
-    background-image: url(/images/bg-pattern-intro-desktop.svg), var(--intro-gradient);
+    background-image: url(images/bg-pattern-intro-desktop.svg), var(--intro-gradient);
     background-position: 20% 55%;
   }
 
